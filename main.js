@@ -16,3 +16,29 @@ var student = {
 for (var key in student) {
   console.log(student[key]);
 }
+
+
+
+// creo un array di oggetti di studenti
+var students = [
+  {
+    'nome': 'Alessandro',
+    'cognome': 'Bianchi',
+    'età': 18
+  },
+  {
+    'nome': 'Mario',
+    'cognome': 'Rossi',
+    'età': 18
+  },
+  {
+    'nome': 'Anna',
+    'cognome': 'Lincoln',
+    'età': 56
+  }
+];
+
+// ciclo per stampare nome e cognome di ognuno
+for (var key in students) {
+  console.log(students[key].nome + ' ' + students[key].cognome);
+}
