@@ -42,3 +42,19 @@ var students = [
 for (var key in students) {
   console.log(students[key].nome + ' ' + students[key].cognome);
 }
+
+
+// creo un nuovo oggetto studente 'vuoto'
+var newStudent = {};
+
+// chiedo all'utente di inserire i dati
+newStudent.nome = prompt('inserisci il nome');
+newStudent.cognome = prompt('inserisci il cognome');
+newStudent.età = parseInt(prompt('inserisci la tua età'));
+
+// aggiungo il nuovo oggetto studente all'array di studenti
+students.push(newStudent);
+// ciclo per stampare di nuovo nome e cognome di ognuno
+for (var key in students) {
+  console.log(students[key].nome + ' ' + students[key].cognome);
+}
