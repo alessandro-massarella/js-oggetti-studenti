@@ -39,8 +39,12 @@ var students = [
 ];
 
 // ciclo per stampare nome e cognome di ognuno
-for (var key in students) {
-  console.log(students[key].nome + ' ' + students[key].cognome);
+// for (var key in students) {
+//   console.log(students[key].nome + ' ' + students[key].cognome);
+// }
+
+for (var i = 0; i < students.length; i++) {
+  console.log(students[i].nome + ' ' + students[i].cognome);
 }
 
 
@@ -55,6 +59,6 @@ newStudent.età = parseInt(prompt('inserisci la tua età'));
 // aggiungo il nuovo oggetto studente all'array di studenti
 students.push(newStudent);
 // ciclo per stampare di nuovo nome e cognome di ognuno
-for (var key in students) {
-  console.log(students[key].nome + ' ' + students[key].cognome);
-}
+// for (var key in students) {
+//   console.log(students[key].nome + ' ' + students[key].cognome);
+// }
