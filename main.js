@@ -62,3 +62,6 @@ students.push(newStudent);
 // for (var key in students) {
 //   console.log(students[key].nome + ' ' + students[key].cognome);
 // }
+for (var i = 0; i < students.length; i++) {
+  console.log(students[i].nome + ' ' + students[i].cognome);
+}
